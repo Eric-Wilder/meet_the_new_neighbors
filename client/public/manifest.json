@@ -1,6 +1,6 @@
 {
-  "short_name": "Neighbors App",
-  "name": "Meet The New Neighbors App",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

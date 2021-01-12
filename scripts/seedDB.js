@@ -1,25 +1,46 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// This file empties the Neighbor Profiles collection and inserts the Profiles below
+// This file empties the Books collection and inserts the books below
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/neighborprofiles"
+  "mongodb://localhost/familyList"
 );
 
-const profileSeed = [
+const familySeed = [
   {
-    lastName: "Smith",
-    firstName: "Alex",
-    details: "Moved to Oak Hill, VA from Bremerton, WA.  My wife's name is Elizabeth.  We have 2 children: Hayes and Hudson",
+    family: "The Bat Family",
+    address: "52 Gotham Drive",
+    adultsName: "Bruce Wayne, Alfred Pennyworth",
+    kidsName: "Duke Thomas, Dick Grayson, Cassandra Cain, Damian Wayne",
+    petsName: "Wolf",
+    likes: "Beating Up Jokers",
     date: new Date(Date.now())
-  }
+  },
+  {
+  family: "The Kent Family",
+  address: "88 Kyrpton Ave",
+  adultsName: "Clark Kent, Lois Lane Kent",
+  kidsName: "Jon Kent",
+  petsName: "Kyrpto",
+  likes: "Flying Thru The Sky",
+  date: new Date(Date.now())
+},
+{
+  family: "The Avengers Family",
+  address: "11 Sheild Street",
+  adultsName: "Captain America, Black Widow",
+  kidsName: "Thor, Hulk, She-Hulk",
+  petsName: "Loki",
+  likes: "Finding Stones",
+  date: new Date(Date.now())
+},
 ];
 
-db.Profile
+db.Family
   .remove({})
-  .then(() => db.Profile.collection.insertMany(profileSeed))
+  .then(() => db.Family.collection.insertMany(familySeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

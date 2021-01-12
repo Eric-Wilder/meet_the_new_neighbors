@@ -1,3 +1,3 @@
 module.exports = {
-  Profile: require("./profile")
+  Family: require("./family")
 };

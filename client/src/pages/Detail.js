@@ -5,13 +5,14 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
 function Detail(props) {
-  const [profile, setProfile] = useState({})
+  const [family, setFamily] = useState({})
 
-  // When this component mounts, grab the profile with the _id of props.match.params.id
+  // When this component mounts, grab the book with the _id of props.match.params.id
+  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
   const {id} = useParams()
   useEffect(() => {
-    API.getProfile(id)
-      .then(res => setProfile(res.data))
+    API.getFamily(id)
+      .then(res => setFamily(res.data))
       .catch(err => console.log(err));
   }, [])
 
@@ -21,24 +22,34 @@ function Detail(props) {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {profile.lastName} Profile
+                {family.family} on {family.address}
               </h1>
             </Jumbotron>
           </Col>
         </Row>
         <Row>
-          <Col size="md-10 md-offset-1">
+          <Col size="md-12">
             <article>
-              <h1>Neighbor Profile Information</h1>
+              <h1> {family.family} Info</h1>
               <p>
-                {profile.details}
+              <h2> Adults Of The House</h2>
+                {family.adultsName}
+              </p>
+              <p>
+                {family.kidsName}
+              </p>
+              <p>
+                {family.petsName}
+              </p>
+              <p>
+                {family.likes}
               </p>
             </article>
           </Col>
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Profiles List</Link>
+            <Link to="/">←Home</Link>
           </Col>
         </Row>
       </Container>
@@ -47,3 +58,7 @@ function Detail(props) {
 
 
 export default Detail;
+
+
+
+

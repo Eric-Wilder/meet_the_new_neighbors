@@ -1,20 +1,20 @@
 import axios from "axios";
 
 export default {
-  // Gets all Profiles
-  getProfiles: function() {
-    return axios.get("/api/profiles");
+  // Gets all books
+  getFamilies: function() {
+    return axios.get("/api/families");
   },
-  // Gets the Profiles with the given id
-  getProfile: function(id) {
-    return axios.get("/api/profiles/" + id);
+  // Gets the book with the given id
+  getFamily: function(id) {
+    return axios.get("/api/families/" + id);
   },
-  // Deletes the Profiles with the given id
-  deleteProfile: function(id) {
-    return axios.delete("/api/profiles/" + id);
+  // Deletes the book with the given id
+  deleteFamily: function(id) {
+    return axios.delete("/api/families/" + id);
   },
-  // Saves a Profiles to the database
-  saveProfile: function(profileData) {
-    return axios.post("/api/profiles", profileData);
+  // Saves a book to the database
+  saveFamily: function(familyData) {
+    return axios.post("/api/families", familyData);
   }
 };
