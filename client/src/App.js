@@ -4,6 +4,7 @@ import Families from "./pages/Families";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import ProfileList from "./components/ProfileList";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Switch>
           <Route exact path={["/", "/families"]}>
             <Families />
+            <ProfileList />
           </Route>
           <Route exact path="/families/:id">
             <Detail />
