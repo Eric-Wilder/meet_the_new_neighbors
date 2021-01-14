@@ -4,8 +4,11 @@ const Schema = mongoose.Schema;
 const familySchema = new Schema({
   family: { type: String, required: true },
   address: { type: String, required: true },
+  numAdults: Number,
   adultsName: String,
+  numKids: Number,
   kidsName: String,
+  numPets: Number,
   petsName: String,
   likes: String, 
   date: { type: Date, default: Date.now }

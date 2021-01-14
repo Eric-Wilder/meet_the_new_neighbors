@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
+// import Card from "../components/Card";
 import API from "../utils/API";
+import "./Styles/Details.css";
 
 function Detail(props) {
   const [family, setFamily] = useState({})
@@ -22,28 +24,24 @@ function Detail(props) {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {family.family} on {family.address}
+                Meet The {family.family} 
               </h1>
             </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="md-12">
+          </Col>
+        </Row>
+        <Row>
+          
+          <Col size="md-12 ">
             <article>
               <h1> {family.family} Info</h1>
               <p>
-              <h2> Adults Of The House</h2>
-                {family.adultsName}
+               The {family.family} has {family.numAdults} adult(s). {family.adultsName}. {family.numKids} kid(s). {family.kidsName}. {family.numPets} pet(s). {family.petsName}.
               </p>
-              <p>
-                {family.kidsName}
-              </p>
-              <p>
-                {family.petsName}
-              </p>
-              <p>
-                {family.likes}
-              </p>
+              
             </article>
           </Col>
         </Row>

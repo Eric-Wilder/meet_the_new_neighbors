@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
-import "./Families.css"; 
+import "./Styles/Families.css";
+import FamilyData from "../components/Table"
 
 function Families() {
   // Setting our component's initial state
@@ -20,6 +21,7 @@ function Families() {
 
   // Loads all books and sets them to books
   function loadFamilies() {
+
     API.getFamilies()
       .then(res =>
         setFamilies(res.data)
@@ -48,10 +50,14 @@ function Families() {
       API.saveFamily({
         family: formObject.family,
         address: formObject.address,
+        numAdults: formObject.numAdults,
         adultsName: formObject.adultsName,
+        numKids: formObject.numKids,
         kidsName: formObject.kidsName,
+        numPets: formObject.numPets,
         petsName: formObject.petsName,
         likes: formObject.likes,
+        photo: formObject.photo,
       })
         .then(res => loadFamilies())
         .catch(err => console.log(err));
@@ -61,21 +67,21 @@ function Families() {
   return (
     <Container fluid>
       <Row>
-      <Col size="md-12">
-      <Jumbotron>
-      <h1>Welcome To the Community</h1>
-      </Jumbotron>
+        <Col size="md-12">
+          <Jumbotron>
+            <h1>Welcome To the Community</h1>
+          </Jumbotron>
 
-      </Col>
+        </Col>
       </Row>
       <Row>
         <Col size="md-6">
-        <h2>Enter Your Family Info Below:</h2>
+          <h2>Enter Residents Info Below:</h2>
           <form>
             <Input
               onChange={handleInputChange}
               name="family"
-              placeholder="Family Name(required)"
+              placeholder="Residents Name(required) Ex: Johnson Residents"
             />
             <Input
               onChange={handleInputChange}
@@ -84,9 +90,21 @@ function Families() {
             />
             <Input
               onChange={handleInputChange}
+              name="numAdults"
+              placeholder="# of Adults"
+            />
+
+            <Input
+              onChange={handleInputChange}
               name="adultsName"
               placeholder="Adults Name"
             />
+            <Input
+              onChange={handleInputChange}
+              name="numKids"
+              placeholder="# of Kids"
+            />
+
             <Input
               onChange={handleInputChange}
               name="kidsName"
@@ -94,34 +112,47 @@ function Families() {
             />
             <Input
               onChange={handleInputChange}
+              name="numPets"
+              placeholder="# of Pets"
+            />
+
+            <Input
+              onChange={handleInputChange}
               name="petsName"
-              placeholder="Pet Name"
+              placeholder="Pets Type and Name"
             />
             <TextArea
               onChange={handleInputChange}
               name="likes"
               placeholder="Family Likes and Interest"
             />
+            
+            <label class="form-label" for="familyPhoto">Input Photo of Residents</label>
+            <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" />
             <FormBtn
               disabled={!(formObject.address && formObject.family)}
               onClick={handleFormSubmit}
             >
-              Add Family
+              Add Residents
               </FormBtn>
           </form>
         </Col>
         <Col size="md-6 sm-12">
-        <h2>Justice Community Families</h2>
+          <h2>Justice Community Residents</h2>
+          <FamilyData families={families} />
+
+
+          <h2>Meet The Residents</h2>
           {families.length ? (
             <List>
               {families.map(family => (
                 <ListItem key={family._id}>
                   <Link to={"/families/" + family._id}>
                     <strong>
-                      {family.family} on {family.address}
+                      {family.family}
                     </strong>
                   </Link>
-                  <DeleteBtn onClick={() => deleteFamily(family._id)} />
+                  {/* <DeleteBtn onClick={() => deleteFamily(family._id)} /> */}
                 </ListItem>
               ))}
             </List>
