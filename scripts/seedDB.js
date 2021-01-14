@@ -10,30 +10,42 @@ mongoose.connect(
 
 const familySeed = [
   {
-    family: "The Bat Family",
+    family: "Bat Residents",
     address: "52 Gotham Drive",
-    adultsName: "Bruce Wayne, Alfred Pennyworth",
+    numAdults: 2,
+    adultsName: "Bruce Wayne and Alfred Pennyworth",
+    numKids: 4,
     kidsName: "Duke Thomas, Dick Grayson, Cassandra Cain, Damian Wayne",
+    numPets: 1,
     petsName: "Wolf",
     likes: "Beating Up Jokers",
+    // photo: url("/hero2.jpg"),
     date: new Date(Date.now())
   },
   {
-  family: "The Kent Family",
+  family: "Kent Residents",
   address: "88 Kyrpton Ave",
-  adultsName: "Clark Kent, Lois Lane Kent",
+  numAdults: 2,
+  adultsName: "Clark Kent and Lois Lane Kent",
+  numKids: 1,
   kidsName: "Jon Kent",
+  numPets: 1,
   petsName: "Kyrpto",
   likes: "Flying Thru The Sky",
+  // photo: url("/hero2.jpg"),
   date: new Date(Date.now())
 },
 {
-  family: "The Avengers Family",
-  address: "11 Sheild Street",
-  adultsName: "Captain America, Black Widow",
+  family: "Avengers Residents",
+  address: "11 Shield Street",
+  numAdults: 2,
+  adultsName: "Captain America and Black Widow",
+  numKids: 3,
   kidsName: "Thor, Hulk, She-Hulk",
+  numPets: 1,
   petsName: "Loki",
   likes: "Finding Stones",
+  // photo: url("/hero2.jpg"),
   date: new Date(Date.now())
 },
 ];
