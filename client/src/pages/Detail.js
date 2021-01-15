@@ -9,8 +9,8 @@ import "./Styles/Details.css";
 function Detail(props) {
   const [family, setFamily] = useState({})
 
-  // When this component mounts, grab the book with the _id of props.match.params.id
-  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  // When this component mounts, grab the resident with the _id of props.match.params.id
+  
   const {id} = useParams()
   useEffect(() => {
     API.getFamily(id)

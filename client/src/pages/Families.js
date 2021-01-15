@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -19,7 +18,7 @@ function Families() {
     loadFamilies()
   }, [])
 
-  // Loads all books and sets them to books
+  // Loads all families and sets them to families
   function loadFamilies() {
 
     API.getFamilies()
@@ -29,21 +28,14 @@ function Families() {
       .catch(err => console.log(err));
   };
 
-  // Deletes a book from the database with a given id, then reloads books from the db
-  function deleteFamily(id) {
-    API.deleteFamily(id)
-      .then(res => loadFamilies())
-      .catch(err => console.log(err));
-  }
-
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
   };
 
-  // When the form is submitted, use the API.saveBook method to save the book data
-  // Then reload books from the database
+  // When the form is submitted, use the API.saveFamily method to save the family data
+  // Then reload families from the database
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.family && formObject.address) {
@@ -152,7 +144,6 @@ function Families() {
                       {family.family}
                     </strong>
                   </Link>
-                  {/* <DeleteBtn onClick={() => deleteFamily(family._id)} /> */}
                 </ListItem>
               ))}
             </List>

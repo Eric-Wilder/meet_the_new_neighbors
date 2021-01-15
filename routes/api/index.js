@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const familyRoutes = require("./families");
 
-// Book routes
+// family routes
 router.use("/families", familyRoutes);
 
 module.exports = router;
