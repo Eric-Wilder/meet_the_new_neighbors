@@ -11,6 +11,7 @@ const familySchema = new Schema({
   numPets: Number,
   petsName: String,
   likes: String, 
+  photo: { type: String, default: ""},
   date: { type: Date, default: Date.now }
 });
 
