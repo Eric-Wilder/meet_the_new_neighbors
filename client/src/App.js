@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Families from "./pages/Families";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
@@ -12,7 +11,6 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav />
         <Switch>
           <Route exact path={["/", "/families"]}>
             <Families />
