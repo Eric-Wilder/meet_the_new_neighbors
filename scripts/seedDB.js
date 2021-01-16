@@ -10,7 +10,7 @@ mongoose.connect(
 
 const familySeed = [
   {
-    family: "Bat",
+    family: <Link to = "http://localhost:3000/families/60031c8fa5d74218f5d74e4a">Bat</Link>,
     address: "52 Gotham Drive",
     numAdults: 2,
     adultsName: "Bruce Wayne and Alfred Pennyworth",

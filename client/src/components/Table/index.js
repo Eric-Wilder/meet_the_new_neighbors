@@ -1,6 +1,7 @@
 import React from "react";
 import { MDBDataTable } from "mdbreact";
 
+
 const FamilyData = (props) => {
   const data = {
     columns: [
@@ -9,7 +10,7 @@ const FamilyData = (props) => {
         field: "family",
         sort: "asc",
         width: 500,
-      },
+        },
       {
         label: "# of Adults",
         field: "numAdults",
