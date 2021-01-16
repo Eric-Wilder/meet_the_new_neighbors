@@ -4,7 +4,10 @@
     height: 300;
     clear: "both";
     padding-top: 120;
-    text-align: center;
     background-image: url("/hero2.jpg");
-    
+    /* position: fixed; */
+    min-width: 100%;
+    min-height: 75%;
+    background-size: cover;
+    background-position: center;
 }

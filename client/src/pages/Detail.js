@@ -22,11 +22,12 @@ function Detail(props) {
       <Container fluid>
         <Row>
           <Col size="md-12">
+          <h1>Welcome To the Justice Community</h1>
             <Jumbotron>
-              <h1>
-                Meet The {family.family} 
-              </h1>
+              
             </Jumbotron>
+            <h1>Meet The {family.family} Residents</h1>
+
           </Col>
         </Row>
         <Row>
@@ -36,13 +37,13 @@ function Detail(props) {
         <Row>
           
           <Col size="md-12 ">
-            <article>
-              <h1> {family.family} Info</h1>
+            <div>
+              <h1 className= "resInfo"> {family.family} Resident Info</h1>
               <p>
-               The {family.family} has {family.numAdults} adult(s). {family.adultsName}. {family.numKids} kid(s). {family.kidsName}. {family.numPets} pet(s). {family.petsName}.
+               The {family.family} Resident has {family.numAdults} adult(s). {family.adultsName}. {family.numKids} kid(s). {family.kidsName}. {family.numPets} pet(s). {family.petsName}.
               </p>
               
-            </article>
+            </div>
           </Col>
         </Row>
         <Row>
