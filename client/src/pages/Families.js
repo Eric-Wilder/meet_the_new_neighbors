@@ -60,8 +60,9 @@ function Families() {
     <Container fluid>
       <Row>
         <Col size="md-12">
+        <h1>Welcome To the Justice Community</h1>
           <Jumbotron>
-            <h1>Welcome To the Community</h1>
+            
           </Jumbotron>
 
         </Col>
