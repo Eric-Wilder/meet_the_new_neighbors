@@ -10,7 +10,7 @@ mongoose.connect(
 
 const familySeed = [
   {
-    family: "Bat Residents",
+    family: "Bat",
     address: "52 Gotham Drive",
     numAdults: 2,
     adultsName: "Bruce Wayne and Alfred Pennyworth",
@@ -23,7 +23,7 @@ const familySeed = [
     date: new Date(Date.now())
   },
   {
-  family: "Kent Residents",
+  family: "Kent",
   address: "88 Kyrpton Ave",
   numAdults: 2,
   adultsName: "Clark Kent and Lois Lane Kent",
@@ -36,7 +36,7 @@ const familySeed = [
   date: new Date(Date.now())
 },
 {
-  family: "Avengers Residents",
+  family: "Avengers",
   address: "11 Shield Street",
   numAdults: 2,
   adultsName: "Captain America and Black Widow",

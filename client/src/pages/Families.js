@@ -61,8 +61,7 @@ function Families() {
       <Row>
         <Col size="md-12">
         <h1>Welcome To the Justice Community</h1>
-          <Jumbotron>
-            
+          <Jumbotron>  
           </Jumbotron>
 
         </Col>
