@@ -19,7 +19,7 @@ const familySeed = [
     numPets: 1,
     petsName: "Wolf",
     likes: "Beating Up Jokers",
-    // photo: url("/hero2.jpg"),
+    photo: "https://pm1.narvii.com/7170/71b1223d4a971d5b804a31ecb5c850b02851d96br1-2048-1584v2_uhq.jpg",
     date: new Date(Date.now())
   },
   {
@@ -32,7 +32,7 @@ const familySeed = [
   numPets: 1,
   petsName: "Kyrpto",
   likes: "Flying Thru The Sky",
-  // photo: url("/hero2.jpg"),
+  photo: "https://i.pinimg.com/originals/93/b4/fd/93b4fd0381379b78fcba512c28231468.png",
   date: new Date(Date.now())
 },
 {
@@ -45,7 +45,7 @@ const familySeed = [
   numPets: 1,
   petsName: "Loki",
   likes: "Finding Stones",
-  // photo: url("/hero2.jpg"),
+  photo: "https://s3-prod.adage.com/s3fs-public/styles/width_1024/public/marvelthumb2.jpg",
   date: new Date(Date.now())
 },
 ];

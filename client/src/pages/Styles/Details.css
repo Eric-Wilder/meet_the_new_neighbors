@@ -1,4 +1,25 @@
 .resInfo {
-text-align: left;
+text-align: center;
 margin-top: 5rem;
+}
+
+img {
+height: 100;
+width: 100%;
+align-content: center;
+}
+h1 {
+    text-align: center;
+    color: royalblue;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+};
+
+h2 {
+    margin-top: 10rem;
+
+};
+p {
+    font-size: large;
 }
