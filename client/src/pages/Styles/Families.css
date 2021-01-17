@@ -6,6 +6,8 @@ h1 {
     font-style: italic;
 };
 
-h2 {
-    margin-top: 10rem;
+.resident-text {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: royalblue;
 };

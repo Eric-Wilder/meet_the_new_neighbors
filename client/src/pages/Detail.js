@@ -31,7 +31,7 @@ function Detail(props) {
       <Col size="md-12">
       <h1>Meet The {family.family} Residents</h1>
         <div>
-          <img  src= {family.photo} height= "550"  alt="image" />
+          <img  src= {family.photo} height= "550"  alt="family photo image" />
         </div>
       </Col>
         <Col size="md-12 ">
@@ -39,7 +39,7 @@ function Detail(props) {
             <h1 className= "resInfo"> {family.family} Resident Info</h1>
             <p>
               The {family.family} Resident has {family.numAdults} adult(s). {family.adultsName}. {family.numKids} kid(s). {family.kidsName}. {family.numPets} pet(s). {family.petsName}. 
-              Familly Likes: {family.likes}
+              Family Likes: {family.likes}
               </p>
           </div>
         </Col>
