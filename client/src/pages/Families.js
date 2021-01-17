@@ -68,8 +68,8 @@ function Families() {
       </Row>
       <Row>
         <Col size="md-6">
-          <h2>Enter Residents Info Below:</h2>
-          <form>
+          <h2 className= "resident-text">Enter Residents Info. Below:</h2>
+          <form className= "res-form">
             <Input
               onChange={handleInputChange}
               name="family"
@@ -130,11 +130,11 @@ function Families() {
           </form>
         </Col>
         <Col size="md-6 sm-12">
-          <h2>Justice Community Residents</h2>
+          <h2 className= "resident-text">Justice Community Residents:</h2>
           <FamilyData families={families} />
 
 
-          <h2>Meet The Residents</h2>
+          <h2 className= "resident-text">Meet The Residents:</h2>
           {families.length ? (
             <List>
               {families.map(family => (
