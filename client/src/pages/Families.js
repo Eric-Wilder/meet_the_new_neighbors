@@ -1,4 +1,11 @@
 import React, { useState, useEffect } from "react";
+// React-icons
+import { BsBuilding } from "react-icons/bs";
+import { RiCommunityLine } from "react-icons/ri";
+import { HiUserGroup } from "react-icons/hi";
+import { IoInformationCircleSharp } from "react-icons/io5";
+import { FaComments } from "react-icons/fa";
+
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -60,16 +67,17 @@ function Families() {
     <Container fluid>
       <Row>
         <Col size="md-12">
-        <h1>Welcome To the Justice Community</h1>
-          <Jumbotron>  
+          
+            <h1><BsBuilding/> Welcome To the Justice Community <RiCommunityLine/></h1>
+          <Jumbotron>
           </Jumbotron>
 
         </Col>
       </Row>
       <Row>
         <Col size="md-6">
-          <h2 className= "resident-text">Enter Residents Info. Below:</h2>
-          <form className= "res-form">
+          <h2 className="resident-text">Enter Residents Info. Below <IoInformationCircleSharp/></h2>
+          <form className="res-form">
             <Input
               onChange={handleInputChange}
               name="family"
@@ -89,7 +97,7 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="adultsName"
-              placeholder="Adults Name"
+              placeholder="Adults Name(s)"
             />
             <Input
               onChange={handleInputChange}
@@ -100,7 +108,7 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="kidsName"
-              placeholder="Kids Name"
+              placeholder="Kids Name(s)"
             />
             <Input
               onChange={handleInputChange}
@@ -111,14 +119,14 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="petsName"
-              placeholder="Pets Type and Name"
+              placeholder="Pets Type and Name(s)"
             />
             <TextArea
               onChange={handleInputChange}
               name="likes"
               placeholder="Family Likes and Interest"
             />
-            
+
             <label class="form-label" for="familyPhoto">Input Photo of Residents</label>
             <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" />
             <FormBtn
@@ -130,11 +138,11 @@ function Families() {
           </form>
         </Col>
         <Col size="md-6 sm-12">
-          <h2 className= "resident-text">Justice Community Residents:</h2>
+          <h2 className="resident-text">Justice Community Residents <HiUserGroup/></h2>
           <FamilyData families={families} />
 
 
-          <h2 className= "resident-text">Meet The Residents:</h2>
+          <h2 className="resident-text">Meet The Residents <FaComments/></h2>
           {families.length ? (
             <List>
               {families.map(family => (
