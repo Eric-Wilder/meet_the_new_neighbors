@@ -3,11 +3,11 @@ text-align: center;
 margin-top: 5rem;
 }
 
-img {
-height: 100;
-width: 100%;
-align-content: center;
+.familyImage {
+height: auto;
+width: 250px;
 }
+
 h1 {
     text-align: center;
     color: royalblue;
