@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+// React-icons
+import { BsBuilding } from "react-icons/bs";
+import { RiCommunityLine } from "react-icons/ri";
+
 import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
@@ -21,26 +26,40 @@ function Detail(props) {
     <Container fluid>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To the Justice Community</h1>
+          <h1><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
           <Jumbotron>
-
           </Jumbotron>
         </Col>
       </Row>
       <Row>
-      <Col size="md-12">
-      <h1>Meet The {family.family} Residents</h1>
-        <div>
-          <img  src= {family.photo} height= "550"  alt="family photo image" />
-        </div>
-      </Col>
-        <Col size="md-12 ">
+        <Col size="md-12">
+          <h1> {family.family} Resident Info</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col size="md-4">
           <div>
-            <h1 className= "resInfo"> {family.family} Resident Info</h1>
+            <img className="familyImage rounded float-right" src={family.photo} alt="family photo image" />
+          </div>
+        </Col>
+        <Col size="md-8 ">
+          <div>
             <p>
-              The {family.family} Resident has {family.numAdults} adult(s). {family.adultsName}. {family.numKids} kid(s). {family.kidsName}. {family.numPets} pet(s). {family.petsName}. 
+              The {family.family} Residence has {family.numAdults} Adult(s)
+            </p>
+            <p> Adult Name(s): {family.adultsName} 
+            </p>
+            <p>Number of Kids: {family.numKids} kid(s)
+            </p>
+            <p> Kid(s) Name(s): {family.kidsName}
+            </p>
+            <p> Number of Pets: {family.numPets}
+            </p>
+            <p> Pet(s) Names: {family.petsName}
+            </p>
+            <p>
               Family Likes: {family.likes}
-              </p>
+            </p>
           </div>
         </Col>
       </Row>
@@ -49,7 +68,7 @@ function Detail(props) {
           <Link to="/">←Home</Link>
         </Col>
       </Row>
-    </Container>
+    </Container >
   );
 }
 
