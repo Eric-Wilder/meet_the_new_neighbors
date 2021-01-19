@@ -10,7 +10,7 @@ mongoose.connect(
 
 const familySeed = [
   {
-    family: <Link to = "http://localhost:3000/families/60031c8fa5d74218f5d74e4a">Bat</Link>,
+    family: "Bat",
     address: "52 Gotham Drive",
     numAdults: 2,
     adultsName: "Bruce Wayne and Alfred Pennyworth",
@@ -46,6 +46,19 @@ const familySeed = [
   petsName: "Loki",
   likes: "Finding Stones",
   photo: "https://s3-prod.adage.com/s3fs-public/styles/width_1024/public/marvelthumb2.jpg",
+  date: new Date(Date.now())
+},
+{
+  family: "WandaVision",
+  address: "125 Westview Avenue",
+  numAdults: 2,
+  adultsName: "Vision and Wanda",
+  numKids: 2,
+  kidsName: "Thomas and William",
+  numPets: 1,
+  petsName: "Dog - Sparky",
+  likes: "Magic, Telepathy",
+  photo: "https://s.yimg.com/ny/api/res/1.2/9WUwoiRphVHw4AbUrnq6Tg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY1MC4zMjI1ODA2NDUxNjEz/https://media.zenfs.com/en-US/tvline.com/e8e2bf9dcb0d28b0de180f9bbbeb7d94",
   date: new Date(Date.now())
 },
 ];

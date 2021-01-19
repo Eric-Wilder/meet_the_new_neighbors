@@ -6,8 +6,14 @@ h1 {
     font-style: italic;
 };
 
-.resident-text {
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bold;
+.resInfo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
     color: royalblue;
-};
+    margin-top: 0.5rem;
+}
+
+.addBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}

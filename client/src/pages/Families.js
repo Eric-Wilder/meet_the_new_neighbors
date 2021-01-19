@@ -67,8 +67,8 @@ function Families() {
     <Container fluid>
       <Row>
         <Col size="md-12">
-          
-            <h1><BsBuilding/> Welcome To the Justice Community <RiCommunityLine/></h1>
+
+          <h1><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
           <Jumbotron>
           </Jumbotron>
 
@@ -76,18 +76,20 @@ function Families() {
       </Row>
       <Row>
         <Col size="md-6">
-          <h2 className="resident-text">Enter Residents Info. Below <IoInformationCircleSharp/></h2>
+          <h2 className="resInfo">Enter Residents Info. Below <IoInformationCircleSharp /></h2>
           <form className="res-form">
             <Input
               onChange={handleInputChange}
               name="family"
               placeholder="Residents Name(required) Ex: Johnson Residents"
             />
+            
             <Input
               onChange={handleInputChange}
               name="address"
-              placeholder="Address (required)"
+              placeholder="Home Address (required)"
             />
+
             <Input
               onChange={handleInputChange}
               name="numAdults"
@@ -99,6 +101,7 @@ function Families() {
               name="adultsName"
               placeholder="Adults Name(s)"
             />
+
             <Input
               onChange={handleInputChange}
               name="numKids"
@@ -110,6 +113,7 @@ function Families() {
               name="kidsName"
               placeholder="Kids Name(s)"
             />
+
             <Input
               onChange={handleInputChange}
               name="numPets"
@@ -121,28 +125,34 @@ function Families() {
               name="petsName"
               placeholder="Pets Type and Name(s)"
             />
+
             <TextArea
               onChange={handleInputChange}
               name="likes"
               placeholder="Family Likes / Interests"
             />
 
-            <label class="form-label" for="familyPhoto">Input Photo of Residents</label>
-            <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" />
+            <Input
+              onChange={handleInputChange}
+              name="photo"
+              placeholder="Copy/Paste URL of Resident Photo"
+            />
+
+            {/* <label class="form-label" for="familyPhoto">Input URL of Resident Photo</label>
+            <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" /> */}
             <FormBtn
               disabled={!(formObject.address && formObject.family)}
-              onClick={handleFormSubmit}
-            >
+              onClick={handleFormSubmit}>
               Add Residents
-              </FormBtn>
+            </FormBtn>
           </form>
         </Col>
         <Col size="md-6 sm-12">
-          <h2 className="resident-text">Justice Community Residents <HiUserGroup/></h2>
+          <h2 className="resInfo">Justice Community Residents <HiUserGroup /></h2>
           <FamilyData families={families} />
 
 
-          <h2 className="resident-text">Meet The Residents <FaComments/></h2>
+          <h2 className="resInfo">Meet The Residents <FaComments /></h2>
           {families.length ? (
             <List>
               {families.map(family => (
@@ -156,7 +166,7 @@ function Families() {
               ))}
             </List>
           ) : (
-              <h3>No Results to Display</h3>
+              <h2 className="resInfo">No Results to Display</h2>
             )}
         </Col>
       </Row>

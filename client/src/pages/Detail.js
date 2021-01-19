@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // React-icons
 import { BsBuilding } from "react-icons/bs";
 import { RiCommunityLine } from "react-icons/ri";
+import { IoInformationCircleSharp } from "react-icons/io5";
 
 import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
@@ -33,7 +34,7 @@ function Detail(props) {
       </Row>
       <Row>
         <Col size="md-12">
-          <h1> {family.family} Resident Info</h1>
+          <h2 className = "resInfo"> {family.family} Resident Info <IoInformationCircleSharp/></h2>
         </Col>
       </Row>
       <Row>
@@ -45,25 +46,28 @@ function Detail(props) {
         <Col size="md-8 ">
           <div>
           <textArea rows="1" cols="139" readOnly = {true}>
-              Number of Adults:   {family.numAdults}
+              Home Address:                 {family.address}
+            </textArea>
+          <textArea rows="1" cols="139" readOnly = {true}>
+              Number of Adults:            {family.numAdults}
             </textArea>
             <textArea rows="1" cols="139" readOnly = {true}>
-              Name of Adults:      {family.adultsName}
+              Name of Adults:               {family.adultsName}
             </textArea>
             <textArea rows="1" cols="139" readOnly = {true}>
-            Number of Kids:      {family.numKids}
+            Number of Kids:               {family.numKids}
             </textArea>
             <textArea rows="1" cols="139" readOnly = {true}>
-            Kid(s) Name(s):      {family.kidsName}
+            Kid(s) Name(s):               {family.kidsName}
             </textArea>
             <textArea rows="1" cols="139" readOnly = {true}>
-            Number of Pets:      {family.numPets}
+            Number of Pets:              {family.numPets}
             </textArea>
             <textArea rows="1" cols="139" readOnly = {true}>
-            Pet(s) Names:         {family.petsName}
+            Pet Type/Name(s):         {family.petsName}
             </textArea>
             <textArea rows="4" cols="139" readOnly = {true}>
-              Family Interests:     {family.likes}
+              Family Likes/Interests:  {family.likes}
             </textArea>
             <p>
             <Link to="/">← Back</Link>

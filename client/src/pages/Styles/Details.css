@@ -1,28 +1,23 @@
 .resInfo {
-text-align: center;
-margin-top: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: royalblue;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 .familyImage {
-height: auto;
-width: 250px;
+    height: auto;
+    width: 300px;
 }
 
 h1 {
-    text-align: center;
-    color: royalblue;
-    background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+    color: royalblue;
+    text-align: center;
 };
 
-h2 {
-    margin-top: 10rem;
-
-};
 p {
     font-size: large;
-}
-.border {
-  border-style: solid;  
 }
