@@ -44,28 +44,36 @@ function Detail(props) {
         </Col>
         <Col size="md-8 ">
           <div>
+          <textArea rows="1" cols="139" readOnly = {true}>
+              Number of Adults:   {family.numAdults}
+            </textArea>
+            <textArea rows="1" cols="139" readOnly = {true}>
+              Name of Adults:      {family.adultsName}
+            </textArea>
+            <textArea rows="1" cols="139" readOnly = {true}>
+            Number of Kids:      {family.numKids}
+            </textArea>
+            <textArea rows="1" cols="139" readOnly = {true}>
+            Kid(s) Name(s):      {family.kidsName}
+            </textArea>
+            <textArea rows="1" cols="139" readOnly = {true}>
+            Number of Pets:      {family.numPets}
+            </textArea>
+            <textArea rows="1" cols="139" readOnly = {true}>
+            Pet(s) Names:         {family.petsName}
+            </textArea>
+            <textArea rows="4" cols="139" readOnly = {true}>
+              Family Interests:     {family.likes}
+            </textArea>
             <p>
-              The {family.family} Residence has {family.numAdults} Adult(s)
-            </p>
-            <p> Adult Name(s): {family.adultsName} 
-            </p>
-            <p>Number of Kids: {family.numKids} kid(s)
-            </p>
-            <p> Kid(s) Name(s): {family.kidsName}
-            </p>
-            <p> Number of Pets: {family.numPets}
-            </p>
-            <p> Pet(s) Names: {family.petsName}
-            </p>
-            <p>
-              Family Likes: {family.likes}
+            <Link to="/">← Back</Link>
             </p>
           </div>
         </Col>
       </Row>
       <Row>
         <Col size="md-2">
-          <Link to="/">←Home</Link>
+          
         </Col>
       </Row>
     </Container >

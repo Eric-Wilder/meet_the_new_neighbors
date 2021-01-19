@@ -91,7 +91,7 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="numAdults"
-              placeholder="# of Adults"
+              placeholder="Number of Adults"
             />
 
             <Input
@@ -102,7 +102,7 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="numKids"
-              placeholder="# of Kids"
+              placeholder="Number of Kids"
             />
 
             <Input
@@ -113,7 +113,7 @@ function Families() {
             <Input
               onChange={handleInputChange}
               name="numPets"
-              placeholder="# of Pets"
+              placeholder="Number of Pets"
             />
 
             <Input
@@ -124,7 +124,7 @@ function Families() {
             <TextArea
               onChange={handleInputChange}
               name="likes"
-              placeholder="Family Likes and Interest"
+              placeholder="Family Likes / Interests"
             />
 
             <label class="form-label" for="familyPhoto">Input Photo of Residents</label>
