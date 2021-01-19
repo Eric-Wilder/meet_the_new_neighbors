@@ -23,3 +23,6 @@ h2 {
 p {
     font-size: large;
 }
+.border {
+  border-style: solid;  
+}
