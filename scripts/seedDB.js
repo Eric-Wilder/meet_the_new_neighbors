@@ -11,6 +11,7 @@ mongoose.connect(
 const familySeed = [
   {
     family: "Bat",
+    email: "batman@justice.com",
     address: "52 Gotham Drive",
     numAdults: 2,
     adultsName: "Bruce Wayne and Alfred Pennyworth",
@@ -24,6 +25,7 @@ const familySeed = [
   },
   {
   family: "Kent",
+  email: "superman@justice.com",
   address: "88 Kyrpton Ave",
   numAdults: 2,
   adultsName: "Clark Kent and Lois Lane Kent",
@@ -37,6 +39,7 @@ const familySeed = [
 },
 {
   family: "Avengers",
+  email: "avengers@justice.com",
   address: "11 Shield Street",
   numAdults: 2,
   adultsName: "Captain America and Black Widow",
@@ -50,6 +53,7 @@ const familySeed = [
 },
 {
   family: "WandaVision",
+  email: "wandavision@justice.com",
   address: "125 Westview Avenue",
   numAdults: 2,
   adultsName: "Vision and Wanda",
