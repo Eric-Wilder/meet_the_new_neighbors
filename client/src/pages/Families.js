@@ -48,6 +48,7 @@ function Families() {
     if (formObject.family && formObject.address) {
       API.saveFamily({
         family: formObject.family,
+        email: formObject.email,
         address: formObject.address,
         numAdults: formObject.numAdults,
         adultsName: formObject.adultsName,
@@ -84,6 +85,12 @@ function Families() {
               placeholder="Residents Name(required) Ex: Johnson Residents"
             />
             
+            <Input
+              onChange={handleInputChange}
+              name="email"
+              placeholder="Email Address (required)"
+            />
+
             <Input
               onChange={handleInputChange}
               name="address"

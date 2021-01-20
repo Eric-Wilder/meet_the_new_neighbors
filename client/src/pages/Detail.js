@@ -34,7 +34,7 @@ function Detail(props) {
       </Row>
       <Row>
         <Col size="md-12">
-          <h2 className = "resInfo"> {family.family} Resident Info <IoInformationCircleSharp/></h2>
+          <h2 className="resInfo"> {family.family} Resident Info <IoInformationCircleSharp /></h2>
         </Col>
       </Row>
       <Row>
@@ -45,39 +45,42 @@ function Detail(props) {
         </Col>
         <Col size="md-8 ">
           <div>
-          <textArea rows="1" cols="139" readOnly = {true}>
-              Home Address:                 {family.address}
-            </textArea>
-          <textArea rows="1" cols="139" readOnly = {true}>
-              Number of Adults:            {family.numAdults}
-            </textArea>
-            <textArea rows="1" cols="139" readOnly = {true}>
-              Name of Adults:               {family.adultsName}
-            </textArea>
-            <textArea rows="1" cols="139" readOnly = {true}>
-            Number of Kids:               {family.numKids}
-            </textArea>
-            <textArea rows="1" cols="139" readOnly = {true}>
-            Kid(s) Name(s):               {family.kidsName}
-            </textArea>
-            <textArea rows="1" cols="139" readOnly = {true}>
-            Number of Pets:              {family.numPets}
-            </textArea>
-            <textArea rows="1" cols="139" readOnly = {true}>
-            Pet Type/Name(s):         {family.petsName}
-            </textArea>
-            <textArea rows="4" cols="139" readOnly = {true}>
-              Family Likes/Interests:  {family.likes}
-            </textArea>
+            <p className="familyDetails">
+              Email Address: <a href={`mailto:${family.email}`}>{family.email}</a>
+            </p>
+            <p className="familyDetails">
+              Home Address: {family.address}
+            </p>
+            <p className="familyDetails">
+              Number of Adults: {family.numAdults}
+            </p>
+            <p className="familyDetails">
+              Name of Adults: {family.adultsName}
+            </p>
+            <p className="familyDetails">
+              Number of Kids: {family.numKids}
+            </p>
+            <p className="familyDetails">
+              Kid(s) Name(s): {family.kidsName}
+            </p>
+            <p className="familyDetails">
+              Number of Pets: {family.numPets}
+            </p>
+            <p className="familyDetails">
+              Pet Type/Name(s): {family.petsName}
+            </p>
+            <p className="familyDetails">
+              Family Likes/Interests: {family.likes}
+            </p>
             <p>
-            <Link to="/">← Back</Link>
+              <Link to="/">Back To Main Page</Link>
             </p>
           </div>
         </Col>
       </Row>
       <Row>
         <Col size="md-2">
-          
+
         </Col>
       </Row>
     </Container >

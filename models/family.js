@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const familySchema = new Schema({
   family: { type: String, required: true },
+  email: { type: String, required: true },
   address: { type: String, required: true },
   numAdults: Number,
   adultsName: String,
