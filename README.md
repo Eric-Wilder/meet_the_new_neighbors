@@ -33,12 +33,13 @@ _____
 - Node and Express Web Server
 - MongoDB
 - React Bootstrap with Material Design ([mdbreact npm package](https://www.npmjs.com/package/mdbreact))
-- React Icons ([react-icons npm package](https://www.npmjs.com/package/react-icons))
+- React Icons ([react-icons npm package](https://www.npmjs.com/package/react-icons))   
+- Auth0 React for single page user authentication ([@auth0/auth0-react npm package](https://www.npmjs.com/package/@auth0/auth0-react))
 - favicon.io (generates favicon ICO files from PNG, Text, or Emoji)
 - Heroku
 _____
 ## Contributing
-Muhammad Anas, Malcolm McFadden, Ed Sivick, Eric Wilder, BCS Units 19-21 class documentation, Stack Overflow, Grepper, W3Schools.com, and BCS support for functionality and code syntax
+Muhammad Anas, Malcolm McFadden, Ed Sivick, Eric Wilder, BCS Units 19-21 class documentation, Instructor Lada along with TAs Stephen and Ashley for help with App functionality / code syntax, Stack Overflow, auth0, W3Schools.com
 _____
 ## Questions
 If there are any questions, or if you would prefer more information concerning this app,

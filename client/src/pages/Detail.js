@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 // React-icons
-import { BsBuilding } from "react-icons/bs";
-import { RiCommunityLine } from "react-icons/ri";
 import { IoInformationCircleSharp } from "react-icons/io5";
 
 import { Link, useParams } from "react-router-dom";
@@ -10,6 +8,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import "./Styles/Details.css";
+import Profile from '../components/Profile';
 
 function Detail(props) {
   const [family, setFamily] = useState({})
@@ -27,9 +26,10 @@ function Detail(props) {
     <Container fluid>
       <Row>
         <Col size="md-12">
-          <h1><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
-          <Jumbotron>
-          </Jumbotron>
+
+          <Profile />
+          <Jumbotron />
+
         </Col>
       </Row>
       <Row>
