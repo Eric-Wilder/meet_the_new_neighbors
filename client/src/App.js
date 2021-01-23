@@ -3,14 +3,26 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Families from "./pages/Families";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
-import '@fortawesome/fontawesome-free/css/all.min.css'; 
-import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
+import './App.css';
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
+import Profile from './components/Profile';
+import { useAuth0 } from '@auth0/auth0-react';
+
 function App() {
+
+  const { isLoading } = useAuth0();
+  if (isLoading) return <div>Loading...</div>
+
   return (
     <Router>
       <div>
+        <LoginButton />
+        <LogoutButton />
         <Switch>
           <Route exact path={["/", "/families"]}>
             <Families />
