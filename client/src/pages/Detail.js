@@ -174,22 +174,20 @@ function Detail(props) {
                 placeholder="Copy/Paste URL of Resident Photo"
               />
 
-{/* <button style={{ float: "right", marginBottom: 10 }} onClick={handleFormUpdate} className="updateResidents">
-Update Your Info
-    </button> */}
-              <UpdateBtn
-                // disabled={!(family.address && family.family)}
+              <button
+                type="button" className="btn btn-primary"
+                disabled={!(family.address && family.family)}
                 onClick={handleFormUpdate}>
                   
-                 
-                Update Your Info
+                  <Link className="color" to="/">Update Your Info</Link>
+                {/* Update Your Info */}
+            </button>
 
-            </UpdateBtn>
             </form>
 
-            <MainBtn>
+            <button type="button" className="btn btn-primary text-right">
               <Link className="color" to="/">Back To Main Page</Link>
-            </MainBtn>
+            </button>
           </div>
         </Col>
       </Row>

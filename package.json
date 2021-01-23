@@ -22,7 +22,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
     "@auth0/auth0-spa-js": "^1.13.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mdbreact": "^5.0.1",
