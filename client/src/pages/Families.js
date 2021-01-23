@@ -148,11 +148,12 @@ function Families() {
 
               {/* <label class="form-label" for="familyPhoto">Input URL of Resident Photo</label>
             <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" /> */}
-              <FormBtn
+              <button
+                type="button" className="btn btn-primary" 
                 disabled={!(formObject.address && formObject.family)}
                 onClick={handleFormSubmit}>
                 Add Residents
-            </FormBtn>
+            </button>
             </form>
           </Col>
           <Col size="md-6 sm-12">
