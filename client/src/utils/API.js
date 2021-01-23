@@ -12,5 +12,9 @@ export default {
   // Saves a family profile to the database
   saveFamily: function(familyData) {
     return axios.post("/api/families", familyData);
-  }
+  },
+
+updateFamily: function(id, data) {
+  return axios.put("/api/families/" + id, data);
+}
 };

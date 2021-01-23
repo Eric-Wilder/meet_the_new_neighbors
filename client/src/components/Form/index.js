@@ -26,3 +26,12 @@ export function FormBtn(props) {
     </button>
   );
 }
+
+export function UpdateBtn(props) {
+  return (
+    <button {...props} style={{ float: "right", marginBottom: 10 }} className="updateResidents">
+      {props.children}
+    </button>
+  );
+}
+

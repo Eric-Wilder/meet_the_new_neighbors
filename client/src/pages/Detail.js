@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 // React-icons
+import { BsBuilding } from "react-icons/bs";
+import { RiCommunityLine } from "react-icons/ri";
 import { IoInformationCircleSharp } from "react-icons/io5";
 
 import { Link, useParams } from "react-router-dom";
@@ -8,7 +10,10 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import "./Styles/Details.css";
-import Profile from '../components/Profile';
+// import YourTable from "../components/YourTable/YourTable";
+import { Input, TextArea, FormBtn, UpdateBtn } from "../components/Form";
+
+
 
 function Detail(props) {
   const [family, setFamily] = useState({})
@@ -22,14 +27,35 @@ function Detail(props) {
       .catch(err => console.log(err));
   }, [])
 
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFamily({ ...family, [name]: value })
+  };
+
+  function handleFormUpdate(event) {
+    event.preventDefault();
+    // if (formObject.family && formObject.address) 
+    {
+      API.updateFamily(family._id, family)
+        .then(({data}) =>{
+          setFamily({
+            ...family, 
+            ...data
+          })
+        })
+        .catch(err => console.log(err));
+    }
+  };
+
+
+
   return (
     <Container fluid>
       <Row>
         <Col size="md-12">
-
-          <Profile />
-          <Jumbotron />
-
+          <h1><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
+          <Jumbotron>
+          </Jumbotron>
         </Col>
       </Row>
       <Row>
@@ -38,58 +64,130 @@ function Detail(props) {
         </Col>
       </Row>
       <Row>
+
         <Col size="md-4">
+
+
           <div>
             <img className="familyImage rounded float-right" src={family.photo} alt="family photo image" />
           </div>
         </Col>
         <Col size="md-8 ">
+
           <div>
-            <p className="familyDetails">
-              Email Address: <a href={`mailto:${family.email}`}>{family.email}</a>
-            </p>
-            <p className="familyDetails">
-              Home Address: {family.address}
-            </p>
-            <p className="familyDetails">
-              Number of Adults: {family.numAdults}
-            </p>
-            <p className="familyDetails">
-              Name of Adults: {family.adultsName}
-            </p>
-            <p className="familyDetails">
-              Number of Kids: {family.numKids}
-            </p>
-            <p className="familyDetails">
-              Kid(s) Name(s): {family.kidsName}
-            </p>
-            <p className="familyDetails">
-              Number of Pets: {family.numPets}
-            </p>
-            <p className="familyDetails">
-              Pet Type/Name(s): {family.petsName}
-            </p>
-            <p className="familyDetails">
-              Family Likes/Interests: {family.likes}
-            </p>
+            <form className="res-form">
+
+
+
+              <p className="familyDetails">
+                Email Address: <a href={`mailto:${family.email}`}>{family.email}</a>
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="family"
+                value={family.email}
+              />
+
+              <p className="familyDetails">
+                Home Address: {family.address}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="address"
+                value={family.address}
+              />
+
+              <p className="familyDetails">
+                Number of Adults: {family.numAdults}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="numAdults"
+                value={family.numAdults}
+              />
+
+              <p className="familyDetails">
+                Name of Adults: {family.adultsName}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="adultsName"
+                placeholder={family.adultsName}
+              />
+
+              <p className="familyDetails">
+                Number of Kids: {family.numKids}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="numKids"
+                value={family.numKids}
+              />
+
+              <p className="familyDetails">
+                Kid(s) Name(s): {family.kidsName}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="kidsName"
+                value={family.kidsName}
+              />
+
+              <p className="familyDetails">
+                Number of Pets: {family.numPets}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="numPets"
+                value={family.numPets}
+              />
+
+              <p className="familyDetails">
+                Pet Type/Name(s): {family.petsName}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="petsName"
+                value={family.petsName}
+              />
+
+              
+              <p className="familyDetails">
+                Family Likes/Interests: {family.likes}
+              </p>
+              <Input
+                onChange={handleInputChange}
+                name="likes"
+                value={family.likes}
+              />
+
+              <UpdateBtn
+                disabled={!(family.address && family.family)}
+                onClick={handleFormUpdate}>
+                Update Your Info
+            </UpdateBtn>
+            </form>
+
             <p>
               <Link to="/">Back To Main Page</Link>
             </p>
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col size="md-2">
+
+      {/* <Row>
+        <Col size="md-12">
+          <YourTable>
+
+          </YourTable>
 
         </Col>
-      </Row>
+      </Row> */}
     </Container >
   );
 }
 
 
 export default Detail;
-
-
 
 
