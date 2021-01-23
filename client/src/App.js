@@ -12,6 +12,7 @@ import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
 import Profile from './components/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
+import { Container } from "./components/Grid";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <Router>
       <div>
+        <Container>
         <LoginButton />
         <LogoutButton />
         <Switch>
@@ -34,6 +36,7 @@ function App() {
             <NoMatch />
           </Route>
         </Switch>
+        </Container>
       </div>
     </Router>
   );

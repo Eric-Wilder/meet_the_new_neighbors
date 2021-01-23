@@ -162,7 +162,6 @@ function Detail(props) {
 
               <button
                 type="button" className="btn btn-primary" style={{ float: "left", marginBottom: 10 }}
-                disabled={!(family.address && family.family)}
                 onClick={handleFormUpdate}>
                 Update Your Info
             </button>
