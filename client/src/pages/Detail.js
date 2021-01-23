@@ -16,7 +16,19 @@ import { Input, TextArea, FormBtn, UpdateBtn, MainBtn } from "../components/Form
 
 
 function Detail(props) {
-  const [family, setFamily] = useState({})
+  const [family, setFamily] = useState({
+    email: "",
+    address: "",
+    numAdults: "",
+    adultsName: "",
+    numKids: "",
+    kidsName: "",
+    numPets: "",
+    petsName: "",
+    likes: "",
+    photo: "",
+
+  })
 
   // When this component mounts, grab the resident with the _id of props.match.params.id
 
@@ -35,16 +47,11 @@ function Detail(props) {
   function handleFormUpdate(event) {
     event.preventDefault();
     // if (formObject.family && formObject.address) 
-    {
       API.updateFamily(family._id, family)
-        .then(({data}) =>{
-          setFamily({
-            ...family, 
-            ...data
-          })
+        .then(({ data }) =>{
+          setFamily(data);
         })
         .catch(err => console.log(err));
-    }
   };
 
 
@@ -84,7 +91,7 @@ function Detail(props) {
               </p>
               <Input
                 onChange={handleInputChange}
-                name="family"
+                name="email"
                 value={family.email}
               />
 
@@ -159,7 +166,12 @@ function Detail(props) {
                 onChange={handleInputChange}
                 name="likes"
                 value={family.likes}
+                />
                 
+                <Input
+                onChange={handleInputChange}
+                name="photo"
+                placeholder="Copy/Paste URL of Resident Photo"
               />
 
               <button
@@ -170,6 +182,7 @@ function Detail(props) {
                   <Link className="color" to="/">Update Your Info</Link>
                 {/* Update Your Info */}
             </button>
+
             </form>
 
             <button type="button" className="btn btn-primary text-right">
@@ -178,15 +191,6 @@ function Detail(props) {
           </div>
         </Col>
       </Row>
-
-      {/* <Row>
-        <Col size="md-12">
-          <YourTable>
-
-          </YourTable>
-
-        </Col>
-      </Row> */}
     </Container >
   );
 }
