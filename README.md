@@ -35,7 +35,7 @@ _____
 - React Bootstrap with Material Design ([mdbreact npm package](https://www.npmjs.com/package/mdbreact))
 - React Icons ([react-icons npm package](https://www.npmjs.com/package/react-icons))   
 - Auth0 React for single page user authentication ([@auth0/auth0-react npm package](https://www.npmjs.com/package/@auth0/auth0-react))
-- favicon.io (generates favicon ICO files from PNG, Text, or Emoji)
+- favicon.io generates favicon ICO files from PNG, Text, or Emoji ([favicon.io](https://favicon.io/))
 - Heroku
 _____
 ## Contributing
