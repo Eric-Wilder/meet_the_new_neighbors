@@ -146,8 +146,6 @@ function Families() {
                 placeholder="Copy/Paste URL of Resident Photo"
               />
 
-              {/* <label class="form-label" for="familyPhoto">Input URL of Resident Photo</label>
-            <input type="file" class="form-control" id="familyPhoto" name="familyPhoto" /> */}
               <button
                 type="button" className="btn btn-primary" 
                 disabled={!(formObject.address && formObject.family)}
