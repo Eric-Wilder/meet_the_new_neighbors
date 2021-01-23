@@ -11,7 +11,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import "./Styles/Details.css";
 // import YourTable from "../components/YourTable/YourTable";
-import { Input, TextArea, FormBtn, UpdateBtn } from "../components/Form";
+import { Input, TextArea, FormBtn, UpdateBtn, MainBtn } from "../components/Form";
 
 
 
@@ -171,9 +171,9 @@ function Detail(props) {
             </UpdateBtn>
             </form>
 
-            <p>
-              <Link to="/">Back To Main Page</Link>
-            </p>
+            <MainBtn>
+              <Link className="color" to="/">Back To Main Page</Link>
+            </MainBtn>
           </div>
         </Col>
       </Row>
