@@ -34,4 +34,12 @@ export function UpdateBtn(props) {
     </button>
   );
 }
+export function MainBtn(props) {
+  return (
+    <button {...props} style={{ float: "left", marginBottom: 10 }} className="mainPage">
+      {props.children}
+    </button>
+  );
+}
+
 
