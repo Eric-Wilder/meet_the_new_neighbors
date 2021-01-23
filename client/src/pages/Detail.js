@@ -159,12 +159,15 @@ function Detail(props) {
                 onChange={handleInputChange}
                 name="likes"
                 value={family.likes}
+                
               />
 
               <UpdateBtn
                 disabled={!(family.address && family.family)}
                 onClick={handleFormUpdate}>
-                Update Your Info
+                  
+                  <Link className="color" to="/">Update Your Info</Link>
+                {/* Update Your Info */}
             </UpdateBtn>
             </form>
 
