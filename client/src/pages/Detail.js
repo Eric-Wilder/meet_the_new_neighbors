@@ -162,18 +162,19 @@ function Detail(props) {
                 
               />
 
-              <UpdateBtn
+              <button
+                type="button" className="btn btn-primary"
                 disabled={!(family.address && family.family)}
                 onClick={handleFormUpdate}>
                   
                   <Link className="color" to="/">Update Your Info</Link>
                 {/* Update Your Info */}
-            </UpdateBtn>
+            </button>
             </form>
 
-            <MainBtn>
+            <button type="button" className="btn btn-primary text-right">
               <Link className="color" to="/">Back To Main Page</Link>
-            </MainBtn>
+            </button>
           </div>
         </Col>
       </Row>
