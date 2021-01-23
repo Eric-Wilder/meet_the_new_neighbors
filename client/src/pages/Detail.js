@@ -10,10 +10,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import "./Styles/Details.css";
-// import YourTable from "../components/YourTable/YourTable";
 import { Input, TextArea, FormBtn, UpdateBtn, MainBtn } from "../components/Form";
-
-
 
 function Detail(props) {
   const [family, setFamily] = useState({
@@ -27,7 +24,6 @@ function Detail(props) {
     petsName: "",
     likes: "",
     photo: "",
-
   })
 
   // When this component mounts, grab the resident with the _id of props.match.params.id
@@ -46,15 +42,12 @@ function Detail(props) {
 
   function handleFormUpdate(event) {
     event.preventDefault();
-    // if (formObject.family && formObject.address) 
-      API.updateFamily(family._id, family)
-        .then(({ data }) =>{
-          setFamily(data);
-        })
-        .catch(err => console.log(err));
+    API.updateFamily(family._id, family)
+      .then(({ data }) => {
+        setFamily(data);
+      })
+      .catch(err => console.log(err));
   };
-
-
 
   return (
     <Container fluid>
@@ -71,10 +64,7 @@ function Detail(props) {
         </Col>
       </Row>
       <Row>
-
         <Col size="md-4">
-
-
           <div>
             <img className="familyImage rounded float-right" src={family.photo} alt="family photo image" />
           </div>
@@ -83,9 +73,6 @@ function Detail(props) {
 
           <div>
             <form className="res-form">
-
-
-
               <p className="familyDetails">
                 Email Address: <a href={`mailto:${family.email}`}>{family.email}</a>
               </p>
@@ -158,7 +145,6 @@ function Detail(props) {
                 value={family.petsName}
               />
 
-              
               <p className="familyDetails">
                 Family Likes/Interests: {family.likes}
               </p>
@@ -166,30 +152,24 @@ function Detail(props) {
                 onChange={handleInputChange}
                 name="likes"
                 value={family.likes}
-                />
-                
-                <Input
+              />
+
+              <Input
                 onChange={handleInputChange}
                 name="photo"
                 placeholder="Copy/Paste URL of Resident Photo"
               />
 
-{/* <button style={{ float: "right", marginBottom: 10 }} onClick={handleFormUpdate} className="updateResidents">
-Update Your Info
-    </button> */}
-              <UpdateBtn
-                // disabled={!(family.address && family.family)}
+              <button
+                type="button" className="btn btn-primary" style={{ float: "left", marginBottom: 10 }}
+                disabled={!(family.address && family.family)}
                 onClick={handleFormUpdate}>
-                  
-                 
                 Update Your Info
-
-            </UpdateBtn>
+            </button>
             </form>
-
-            <MainBtn>
+            <button type="button" className="btn btn-primary text-right" style={{ float: "right", marginBottom: 10 }} >
               <Link className="color" to="/">Back To Main Page</Link>
-            </MainBtn>
+            </button>
           </div>
         </Col>
       </Row>
