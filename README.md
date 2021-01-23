@@ -26,7 +26,8 @@ ____
 (4) The App will automatically open a webpage on **localhost:3000**, displaying the **Meet The New Neighbors** App on the Client side (front end).  The Server side (back end) will be running on **localhost:3001**. 
 _____
 ## Usage 
-This App allows new members of a community to introduce themselves to others in that community without making direct contact.  If they move or choose to no longer participate in the App, they can edit their profile to display that, or have the Database Administrator remove them from the **familyList** database.
+This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User must **Log In** to add or view community resident information. They have the ability to **Log In** or **Sign Up** and create an account with Auth0, or **Continue with Google** if they already have a Google account.   
+After logging in, they can enter details about themselves and their family on the left side of the display.  
 _____
 ## Technologies 
 - ReactJS
