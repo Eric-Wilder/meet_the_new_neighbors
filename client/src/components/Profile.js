@@ -11,7 +11,7 @@ const Profile = () => {
     return (
         isAuthenticated && (
             <div>
-                <h1><BsBuilding /> Hello {user.given_name} - Welcome To the Justice Community <RiCommunityLine /></h1>
+                <h1> Hello {user.given_name}< br/><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
             </div>
         )
     )
