@@ -11,6 +11,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import "./Styles/Details.css";
 import { Input, TextArea, FormBtn, UpdateBtn, MainBtn } from "../components/Form";
+import Profile from '../components/Profile';
 
 function Detail(props) {
   const [family, setFamily] = useState({
@@ -53,7 +54,7 @@ function Detail(props) {
     <Container fluid>
       <Row>
         <Col size="md-12">
-          <h1><BsBuilding /> Welcome To the Justice Community <RiCommunityLine /></h1>
+        <Profile />
           <Jumbotron>
           </Jumbotron>
         </Col>
