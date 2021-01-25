@@ -147,7 +147,7 @@ function Families() {
               />
 
               <button
-                type="button" className="btn btn-primary" 
+                type="button" className="resBtn btn btn-primary" 
                 disabled={!(formObject.address && formObject.family)}
                 onClick={handleFormSubmit}>
                 Add Residents

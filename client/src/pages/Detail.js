@@ -162,13 +162,13 @@ function Detail(props) {
               />
 
               <button
-                type="button" className="btn btn-primary" style={{ float: "left", marginBottom: 10 }}
+                type="button" className="updateBtn btn btn-primary" style={{ float: "left", marginBottom: 10 }}
                 onClick={handleFormUpdate}>
-                Update Your Info
+                Update
             </button>
             </form>
-            <button type="button" className="btn btn-primary text-right" style={{ float: "right", marginBottom: 10 }} >
-              <Link className="color" to="/">Back To Main Page</Link>
+            <button type="button" className="backBtn btn btn-primary text-right" style={{ float: "right", marginBottom: 10 }} >
+              <Link className="color" to="/">Go Back</Link>
             </button>
           </div>
         </Col>
