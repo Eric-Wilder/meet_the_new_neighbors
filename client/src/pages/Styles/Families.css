@@ -1,3 +1,4 @@
+/* h1 text (above jumbotron) style */
 h1 {
     text-align: center;
     color: royalblue;
@@ -5,10 +6,11 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
 };
-
+/* Resident Info style */
 .resInfo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     color: royalblue;
     margin-top: 0.5rem;
 }
+

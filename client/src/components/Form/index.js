@@ -21,7 +21,7 @@ export function TextArea(props) {
 
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "left", marginBottom: 10 }} className="addResidents">
+    <button {...props} style={{ float: "left", marginBottom: 10 }} className="resBtn">
       {props.children}
     </button>
   );
@@ -29,14 +29,14 @@ export function FormBtn(props) {
 
 export function UpdateBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="updateResidents">
+    <button {...props} style={{ float: "left", marginBottom: 10 }} className="updateBtn">
       {props.children}
     </button>
   );
 }
 export function MainBtn(props) {
   return (
-    <button {...props} style={{ float: "left", marginBottom: 10 }} className="mainPage">
+    <button {...props} style={{ float: "right", marginBottom: 10 }} className="backBtn">
       {props.children}
     </button>
   );
