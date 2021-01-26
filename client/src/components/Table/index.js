@@ -30,8 +30,9 @@ const FamilyData = (props) => {
         width: 500,
       },
     ],
-    rows:props.families
-    
+    rows:
+      // link: '<router-link to="http://localhost:3000/families/">Bat</router-link>',
+      props.families
   };
   console.log("Props", props.families);
   return <MDBDataTable sorting={true} striped bordered data={data} />;
