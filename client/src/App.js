@@ -12,6 +12,7 @@ import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Container } from "./components/Grid";
+import Calendar from 'react-calendar';
 
 function App() {
 
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route>
             <NoMatch />
+          </Route>
+          <Route exact path={["/","/calendar"]}>
+            <Calendar />
           </Route>
         </Switch>
         </Container>

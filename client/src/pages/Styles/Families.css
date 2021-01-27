@@ -5,12 +5,27 @@ h1 {
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
-};
+}
 /* Resident Info style */
 .resInfo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     color: royalblue;
+    margin-top: 0.5rem;
+}
+/* Resident Info style */
+.resInfo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: royalblue;
+    margin-top: 0.5rem;
+}
+/* Resident Info style - for heroku deployment test*/
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: royalblue;
+    text-align: center;
     margin-top: 0.5rem;
 }
 

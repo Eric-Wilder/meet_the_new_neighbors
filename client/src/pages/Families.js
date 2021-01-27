@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { HiUserGroup } from "react-icons/hi";
 import { IoInformationCircleSharp } from "react-icons/io5";
 import { FaComments } from "react-icons/fa";
+import { render } from 'react-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
@@ -14,6 +16,8 @@ import "./Styles/Families.css";
 import FamilyData from "../components/Table"
 import Profile from '../components/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
+import ReactCalendar from "./Calendar";
+
 
 function Families() {
   // Setting our component's initial state
@@ -41,7 +45,6 @@ function Families() {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value })
   };
-
   // When the form is submitted, use the API.saveFamily method to save the family data
   // Then reload families from the database
   function handleFormSubmit(event) {
@@ -64,7 +67,6 @@ function Families() {
         .catch(err => console.log(err));
     }
   };
-
   return (
     <Container fluid>
       <Row>
@@ -152,6 +154,13 @@ function Families() {
                 onClick={handleFormSubmit}>
                 Add Residents
             </button>
+
+            <button
+              type="button" className="resBtn btn btn-primary">
+              Calendar
+            </button>
+  
+
             </form>
           </Col>
           <Col size="md-6 sm-12">

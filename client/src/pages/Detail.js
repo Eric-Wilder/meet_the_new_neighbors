@@ -13,7 +13,6 @@ import "./Styles/Details.css";
 import { Input, TextArea, FormBtn, UpdateBtn, MainBtn } from "../components/Form";
 import Profile from '../components/Profile';
 
-import Calendar from 'react-calendar';
 
 function Detail(props) {
   const [family, setFamily] = useState({
@@ -175,7 +174,6 @@ function Detail(props) {
           </div>
         </Col>
       </Row>
-      <Calendar/>
     </Container >
   );
 }
