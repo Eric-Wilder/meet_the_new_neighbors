@@ -14,6 +14,7 @@ import LogoutButton from './components/LogoutButton';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Container } from "./components/Grid";
 import Calendar from 'react-calendar';
+import goBack from "./components/Calendar/goBack";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           </Route>
           <Route exact path="/calendar">
             <EventCalendar />
+            <goBack/>
           </Route>
           <Route>
             <NoMatch />

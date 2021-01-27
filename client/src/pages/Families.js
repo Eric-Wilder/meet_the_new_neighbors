@@ -155,11 +155,12 @@ function Families() {
                 Add Residents
             </button>
 
+            <Link to="/Calendar">
             <button
               type="button" className="resBtn btn btn-primary">
               Calendar
             </button>
-  
+            </Link>
 
             </form>
           </Col>

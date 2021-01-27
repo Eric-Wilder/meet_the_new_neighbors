@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import goBack from './goBack';
+import Jumbotron from '../Jumbotron';
 
 export default class EventCalendar extends Component {
   render() {
@@ -14,6 +16,7 @@ export default class EventCalendar extends Component {
           { title: 'Community Event at 9pm!', date: '2021-01-02' }
         ]}
       />
+      
     )
   }
 }
