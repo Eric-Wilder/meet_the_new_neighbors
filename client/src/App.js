@@ -15,6 +15,8 @@ import { useAuth0 } from '@auth0/auth0-react';
 import { Container } from "./components/Grid";
 import Calendar from 'react-calendar';
 import goBack from "./components/Calendar/goBack";
+import Profile from "./components/Profile";
+import Jumbotron from "./components/Jumbotron";
 
 function App() {
 
@@ -35,6 +37,8 @@ function App() {
             <Detail />
           </Route>
           <Route exact path="/calendar">
+            <Profile/>
+            <Jumbotron/>
             <EventCalendar />
             <goBack/>
           </Route>
