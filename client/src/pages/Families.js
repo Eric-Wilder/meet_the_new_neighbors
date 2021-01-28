@@ -19,7 +19,8 @@ function Families() {
   // Setting our component's initial state
   const [families, setFamilies] = useState([])
   const [formObject, setFormObject] = useState({})
-  const { _, isAuthenticated } = useAuth0();
+ 
+  const { user, isAuthenticated } = useAuth0();
 
   // Load all families and store them with setFamilies
   useEffect(() => {
@@ -28,7 +29,7 @@ function Families() {
 
   // Loads all families and sets them to families
   function loadFamilies() {
-
+    
     API.getFamilies()
       .then(res =>
         setFamilies(res.data)
@@ -83,13 +84,15 @@ function Families() {
               <Input
                 onChange={handleInputChange}
                 name="family"
-                placeholder="Residents Name(required) Ex: Johnson Residents"
+                placeholder="Residents Name(required)"
+
               />
 
               <Input
                 onChange={handleInputChange}
                 name="email"
-                placeholder="Email Address (required)"
+                placeholder= "Make Sure You Use The Email You Sign Up With"
+                // value= {user.email}
               />
 
               <Input
