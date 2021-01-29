@@ -76,7 +76,7 @@ box-sizing: border-box;
     width: 145px;
     cursor: pointer;
 }
-/* Resident Info style - testing adding css here also for heroku deployed version was missing this styling */
+/* Resident Info style  */
 .resInfo {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
