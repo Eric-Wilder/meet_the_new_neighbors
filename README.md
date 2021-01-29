@@ -12,7 +12,7 @@ ____
 * [Application_Links_and_Images](#application_links_and_images)
 ____
 ## Description
-The COVID-19 pandemic is an obstacle for many social activities in our lives.  The ‘**Meet The New Neighbor**’ App allows each participant to introduce themselves, and their family members to others within their community.  The Home Owners Association or apartment manager can provide them with a link to the App.  The user inputs specific details such as contact information, interests, hobbies, pets, etc..  They can also view the details of others, and schedule activities with those having similar interests. 
+The COVID-19 pandemic has been an obstacle for many social activities in our lives.  When people move to a new community, there are many who are nervous and prefer to avoid meeting their new neighbors face to face, especially in retirement communities.  The ‘**Meet The New Neighbors**’ App allows each participant to introduce themselves, and their family members to others within their community.  The Home Owners Association or apartment manager would provide each new resident with a link to the App.  The user inputs specific details such as contact information, interests, hobbies, pets, etc..  They can also view the details of others, and schedule activities with those having similar interests. 
 ____
 ## User_Story:
 AS individuals or families move to a new neighborhood or apartment complex   
