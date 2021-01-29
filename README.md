@@ -106,6 +106,12 @@ Heroku link: ([meet the new neighbors](https://murmuring-shore-40796.herokuapp.c
   </p>
   </br>
 
+<p><strong>Image of Residents Table screen</strong></p>
+  <p align="left">
+  <img src="client/public/images/res-table1.png" width="300" title="image of residents table screen" alt="image of residents table screen">
+  </p>
+  </br>
+
   <p><strong>Image of Community Events Calendar</strong></p>
   <p align="left">
   <img src="client/public/images/calendar1.png" width="600" title="image of community events calendar" alt="image of community events calendar">
