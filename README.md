@@ -29,8 +29,16 @@ ____
 (6)  
 _____
 ## Usage 
-This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User must **Log In** to add or view community resident information. They have the ability to **Log In** or **Sign Up** and create an account with Auth0, or **Continue with Google** if they have a Google account.   
-After logging in, they can enter details about themselves and their family on the left side of the display.  
+This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User will **Log In** to add or view community resident information. They have the ability to **Log In** or **Sign Up** and create an account with Auth0, or **Continue with Google** if they have a Google account.   
+
+After logging in, they can enter details about themselves and their family on the left side of the display.  A resident photo can be uploaded to ([imgur](https://imgur.com/)), and they can copy the **Direct Link** of the photo to the Resident Info. form. After entering their information, the user posts it to the database by pressing the **ADD RESIDENTS** button. The user can also edit their profile information at any time.
+
+The User has the ability to **Meet The Residents** in the community by selecting their name from the list on the lower right side of the display.  The **Resident Info.** display screen will appear displaying the information of the other residents, and allow the user to communicate with them by clicking on their email link.   
+
+ A search table is displayed on the right side of the display showing the names of the **Residents**, **# of Adults**, **# of Kids**, and **# of Pets**.  The table can be sorted alphabetically, or the user can Search for the name of a specific resident.   
+
+For future project development, a calendar showing public community events is displayed by pressing the **CALENDAR** button.  This would show events to be held on specific calendar days from the past, current, or future months.  
+
 _____
 ## Technologies_Packages_Used 
 - ReactJS
@@ -64,7 +72,7 @@ _____
 ## Badges
 ![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
 _____
-## Application_Links_and_Images  
+## Application_Link_and_Images  
 **Links:**  
 Heroku link: ([meet the new neighbors](https://murmuring-shore-40796.herokuapp.com/))
 
@@ -74,46 +82,46 @@ Heroku link: ([meet the new neighbors](https://murmuring-shore-40796.herokuapp.c
 <p align="left">
   <img src="client/public/images/login1.png" width="600" title="image of app startup display" alt="image of app startup display">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of Welcome/Log in screen</strong></p>
   <p align="left">
   <img src="client/public/images/login2.png" width="200" title="image of welcome/log in screen" alt="image of welcome/log in screen">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of App Welcome display</strong></p>   
 <p align="left">
   <img src="client/public/images/main-new1.png" width="600" title="image of app welcome display" alt="image of app welcome display">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of Resident Info. input screen</strong></p>
   <p align="left">
   <img src="client/public/images/main-res1.png" width="600" title="image of resident info. input screen" alt="image of resident info. input screen">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of User Resident Info.</strong></p>
   <p align="left">
   <img src="client/public/images/user-res-info1.png" width="600" title="image of user resident info." alt="image of user resident info.">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of Resident Info.</strong></p>
   <p align="left">
   <img src="client/public/images/res-info1.png" width="600" title="image of resident info." alt="image of resident info.">
   </p>
-  </br>
+  </br></br>
 
-<p><strong>Image of Residents Table screen</strong></p>
+<p><strong>Image of Residents Table</strong></p>
   <p align="left">
-  <img src="client/public/images/res-table1.png" width="300" title="image of residents table screen" alt="image of residents table screen">
+  <img src="client/public/images/res-table1.png" width="300" title="image of residents table" alt="image of residents table">
   </p>
-  </br>
+  </br></br>
 
   <p><strong>Image of Community Events Calendar</strong></p>
   <p align="left">
   <img src="client/public/images/calendar1.png" width="600" title="image of community events calendar" alt="image of community events calendar">
   </p>
-  </br>
+  </br></br>
