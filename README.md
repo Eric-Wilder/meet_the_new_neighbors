@@ -53,7 +53,7 @@ _____
 - Heroku
 _____
 ## Contributing
-Muhammad Anas, Malcolm McFadden, Ed Sivick, Eric Wilder, BCS Units 19-21 class documentation, Stack Overflow, auth0, W3Schools.com, Instructor Lada along with TAs Stephen and Ashley for help with App functionality / code syntax
+Muhammad Anas, Malcolm McFadden, Ed Sivick, Eric Wilder, BCS Units 19-21 class documentation, Stack Overflow, auth0, W3Schools.com, Instructor Lada along with TAs Stephen and Ashley for help with App functionality and code syntax
 _____
 ## Questions
 If there are any questions, or if you would prefer more information concerning this app,
