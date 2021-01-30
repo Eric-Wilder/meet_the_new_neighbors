@@ -29,7 +29,7 @@ ____
 (6)  
 _____
 ## Usage 
-This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User will **Log In** to add or view community resident information. They have the ability to **Log In** or **Sign Up** and create an account with Auth0, or **Continue with Google** if they have a Google account.   
+This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User will **Log In** to add or view community resident information. They must **Log In** or **Sign Up** to create an account with Auth0.  The **Continue with Google** option was included during App development.  Although this option will also allow the User to Log In, it is suggested to use the Auth0 credentials.    
 
 After logging in, they can enter details about themselves and their family on the left side of the display.  A resident photo can be uploaded to ([imgur](https://imgur.com/)), and they can copy the **Direct Link** of the photo to the Resident Info. form. After entering their information, the user posts it to the database by pressing the **ADD RESIDENTS** button. The user can also edit their profile information at any time.  Several members of the same residence can create their own profile.
 
@@ -45,11 +45,11 @@ _____
 - Node and Express Web Server
 - MongoDB and Atlas
 - Robo 3T
-- React Bootstrap with Material Design ([mdbreact npm package](https://www.npmjs.com/package/mdbreact))
-- React Icons ([react-icons npm package](https://www.npmjs.com/package/react-icons))   
-- React Calendar ([react-calendar npm package](https://www.npmjs.com/package/react-calendar))   
-- Auth0 React for single page user authentication ([@auth0/auth0-react npm package](https://www.npmjs.com/package/@auth0/auth0-react))
-- favicon.io generates favicon ICO files from PNG, Text, or Emoji ([favicon.io](https://favicon.io/))
+- React Bootstrap with Material Design ([mdbreact npm package](https://www.npmjs.com/package/mdbreact)) - used for creating Resident Table   
+- React Icons ([react-icons npm package](https://www.npmjs.com/package/react-icons)) - icons displayed before / after text headings   
+- React Calendar ([react-calendar npm package](https://www.npmjs.com/package/react-calendar)) - used for creating Calendar   
+- Auth0 React for single page user authentication ([@auth0/auth0-react npm package](https://www.npmjs.com/package/@auth0/auth0-react)) - used for creating Log In / Log Out   
+- favicon.io generates favicon ICO files from PNG, Text, or Emoji ([favicon.io](https://favicon.io/)) - used to create the App shortcut icon
 - Heroku
 _____
 ## Contributing
@@ -86,7 +86,7 @@ Heroku link: ([meet the new neighbors](https://murmuring-shore-40796.herokuapp.c
 
   <p><strong>Image of Welcome/Log in screen</strong></p>
   <p align="left">
-  <img src="client/public/images/login2.png" width="200" title="image of welcome/log in screen" alt="image of welcome/log in screen">
+  <img src="client/public/images/loginauth.png" width="200" title="image of welcome/log in screen" alt="image of welcome/log in screen">
   </p>
   </br></br>
 
