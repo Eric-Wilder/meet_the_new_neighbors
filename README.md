@@ -29,7 +29,7 @@ ____
 (6)  
 _____
 ## Usage 
-This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User will **Log In** to add or view community resident information. They must **Log In** or **Sign Up** to create an account with Auth0.  The **Continue with Google** option was included during App development.  Although this option will also allow the User to Log In, it is suggested to use the Auth0 credentials.    
+This App allows new members of a community to introduce themselves to others in that community without making direct contact.  When the App is opened, the User will **Log In** to add or view community resident information. They must **Log In** or **Sign Up** to create an account with Auth0.  The **Continue with Google** option was included during App development.  Although the Google option will also allow the User to Log In, it is suggested to use the Auth0 credentials.    
 
 After logging in, they can enter details about themselves and their family on the left side of the display.  A resident photo can be uploaded to ([imgur](https://imgur.com/)), and they can copy the **Direct Link** of the photo to the Resident Info. form. After entering their information, the user posts it to the database by pressing the **ADD RESIDENTS** button. The user can also edit their profile information at any time.  Several members of the same residence can create their own profile.
 
